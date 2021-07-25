@@ -17,13 +17,12 @@ function generateMarkdown(responses) {
   return `# ${responses.name}
 
   ${responses.stack}
-  ##[Table of Contents](#table-of-contents)\n
-  ##[Installation](#instalation)\n
-  ##[Usage](#usage)\n
-  ##[License](#license)\n
-  ##[Contributing](#contributing)\n
-  ##[Tests](#tests)\n
-  ##[Questions](#questions)\n
+  ## [Table of Contents](#table-of-contents)\n
+  ## [Installation](#instalation)\n
+  ## [Usage](#usage)\n
+  ## [License](#license)\n
+  ## [Tests](#tests)\n
+  ## [Questions](#questions)\n
 
 
 //Github and Email under Questions 

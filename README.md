@@ -1,19 +1,17 @@
 # Markdown Generator
 
   HTML,CSS
-  ##[Table of Contents](#table-of-contents)
+  ## [Table of Contents](#table-of-contents)
 
-  ##[Installation](#instalation)
+  ## [Installation](#instalation)
 
-  ##[Usage](#usage)
+  ## [Usage](#usage)
 
-  ##[License](#license)
+  ## [License](#license)
 
-  ##[Contributing](#contributing)
+  ## [Tests](#tests)
 
-  ##[Tests](#tests)
-
-  ##[Questions](#questions)
+  ## [Questions](#questions)
 
 
 
