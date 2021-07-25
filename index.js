@@ -9,8 +9,8 @@ const generateREADME = require("./utils/generateMarkdown");
 // TODO: Create an array of questions for user input
 const questions = [{
     type: 'input',
-    name: 'name',
-    message: 'What is your name?',
+    name: 'title',
+    message: `What is the project's title?`,
   },
   {
     type: 'checkbox',
@@ -20,14 +20,24 @@ const questions = [{
   },
   {
     type: 'list',
-    message: 'What is your preferred method of communication?',
-    name: 'contact',
-    choices: ['email', 'phone', 'telekinesis']
+    message: 'What is your project licence?',
+    name: 'licence',
+    choices: ['MIT', 'Apache', 'GPL']
+  },
+  {
+    type: 'input',
+    name: 'github',
+    message: `What is your GitHub username?`,
+  },
+  {
+    type: 'input',
+    name: 'email',
+    message: `What is your email?`,
   }];
 
 
 inquirer.prompt(questions).then((responses) => {
-    const filename = `${responses.name.toLowerCase().split(' ').join('')}.json`;
+    const filename = `${responses.title.toLowerCase().split(' ').join('')}.json`;
 // TODO: Create a function to write README file
 
 fs.writeFile("README.md", generateMarkdown({...responses}), (err) =>

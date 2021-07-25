@@ -14,18 +14,29 @@ function renderLicenseSection(license) {}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(responses) {
-  return `# ${responses.name}
+  return `# ${responses.title}
 
   ${responses.stack}
-  ## [Table of Contents](#table-of-contents)\n
+  ## [Table of Contents:](#table-of-contents)\n
+  ## [Description](#description)\n
   ## [Installation](#instalation)\n
   ## [Usage](#usage)\n
   ## [License](#license)\n
   ## [Tests](#tests)\n
   ## [Questions](#questions)\n
 
+## Description (#description)\n
+${responses.whySection}\n
+${responses.whatSection}\n
 
-//Github and Email under Questions 
+
+## Licence (#license)\n
+${responses.title} is released under the ${responses.licence} licence.\n
+
+
+## Questions (#questions)\n
+For more information and suggestions you can contact me at ${responses.email}.\n
+${responses.github}\n
 
 
   ${renderLicenseBadge(responses.license)}
